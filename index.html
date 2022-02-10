@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraPotter</title>
+    <script src="./script.js"></script>
+  </head>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap"
+    rel="stylesheet"
+  />
+
+  <body class="background">
+    <div class="main">
+      <div class="cabecario">
+        <img class="aluraLogo" src="./images/aluraLogo.svg" alt="aluraLogo" />
+        <h1 class="titulo">Potter</h1>
+        <img class="potterIcon" src="./images/potter.png" alt="logoPotter" />
+      </div>
+
+      <div class="limitboxObsAndSubmit">
+        <textarea
+          id="selectText"
+          class="textFild"
+          cols="30"
+          rows="10"
+          placeholder="Digite seu texto"
+        ></textarea>
+
+        <div>
+          <div class="observations">
+            <img src="./images/atencionIcon.svg" alt="atencionIcon" />
+
+            <h2 class="obsMsg">Apenas letras minúsculas e sem acento</h2>
+          </div>
+          <div class="submit">
+            <input
+              type="submit"
+              id="sendText"
+              onclick="codificador()"
+              class="codificar"
+              value="Fidelius"
+            />
+            <input
+              class="decodificar"
+              type="submit"
+              onclick="decodificador()"
+              value="Revelio"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxMsg">
+      <img
+        class="imgPesquisando"
+        src="./images/High quality products 1 1.svg"
+        alt="pesquisando resultado"
+      />
+
+      <textarea id="msgEncontrada" class="msgUndefined" readonly rows="4">
+  Nenhuma mensagem encontrada
+      </textarea>
+      <h2 class="aviso">
+        Digite um texto que você deseja criptografar ou descriptografar.
+      </h2>
+
+      <button class="copyText" onclick="copy()">Copiar</button>
+    </div>
+  </body>
+</html>
