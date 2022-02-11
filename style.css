@@ -7,15 +7,12 @@
 /* background ============ */
 
 .background {
+  width: 100%;
   padding: 40px;
   background-color: #c2c2c2;
 }
 /* main =============== */
 .main {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 890px; */
   width: 100%;
 }
 /* logos e titulos ============ */
@@ -129,8 +126,6 @@ textarea::placeholder {
   background-color: white;
   border-radius: 32px;
   padding: 32px;
-
-  width: 100%;
 }
 
 img.imgPesquisando {
@@ -162,7 +157,7 @@ img.imgPesquisando {
 
 /* box resposta ============================ */
 
-@media (min-width: 769px) and (max-width: 2000px) {
+@media (min-width: 1440px) and (max-width: 2000px) {
   .background {
     display: flex;
     flex-direction: row;
@@ -192,12 +187,13 @@ img.imgPesquisando {
 
   /* box resposta ==== */
   .boxMsg {
+    width: 100%;
     max-width: 400px;
   }
   /* box resposta ===== */
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1440px) {
   img.imgPesquisando {
     display: none;
   }
